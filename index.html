@@ -2,55 +2,60 @@
 <html lang="ko-KR">
 
 <head>
-  <meta charset="UTF-8">
-  <title>7digital</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <title>7digital</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="l-row">
-  	<header class="header">
-  	  <div class="header__menu">
-  	  	<a class="logo" href="#">
-  	  		<span class="a11y-hidden">7 digital</span>
-  	  	</a>
-  	  	<nav>
-  	  		<h2 class="a11y-hidden">site navigation</h2>
-  	  	  <ul class="gnb">
-  	  	    <li class="is-active"><a class="gnb__link" href="#">Services</a></li>
-  	  	    <li><a class="gnb__link" href="#">Client Stories</a></li>
-  	  	    <li><a class="gnb__link" href="#">News</a></li>
-  	  	    <li><a class="gnb__link" href="#">About</a></li>
-  	  	    <li><a class="gnb__link" href="#">Investors</a></li>
-  	  	    <li><a class="gnb__link" href="#">Contact</a></li>
-  	  	  </ul>
-  	  	</nav>
-  	  </div>
-  	  <div class="video">
-  	    <iframe src="https://www.youtube.com/embed/EuMHZxs_C0c?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1" allowfullscreen></iframe></iframe>
-  	    <div class="header__visual l-row">
-  	    	<h1 class="header__tit">
-	  				Powering music
-	  				<span class="header__tit-disc">streaming <span>/</span> cruation <span>/</span> intelligence</span>
-	  			</h1>
-	  			<button class="video__btn" type="button">
-	  				<span class="a11y-hidden">play</span>
-	  			</button>
+<body>
+    <div class="l-row">
+      <header class="header">
+          <div class="header__menu">
+              <a class="logo" href="#"><span class="a11y-hidden">7 digital</span></a>
+              <nav>
+                <h2 class="a11y-hidden">site navigation</h2>
+                <ul class="gnb">
+                    <li class="is-active"><a class="gnb__link" href="#">Services</a></li>
+                    <li><a class="gnb__link" href="#">Client Stories</a></li>
+                    <li><a class="gnb__link" href="#">News</a></li>
+                    <li><a class="gnb__link" href="#">About</a></li>
+                    <li><a class="gnb__link" href="#">Investors</a></li>
+                    <li><a class="gnb__link" href="#">Contact</a></li>
+                </ul>
+              </nav>
+          </div>
+          <div class="video">
+              <iframe src="https://www.youtube.com/embed/EuMHZxs_C0c?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1&amp;loop=1" allowfullscreen></iframe>
+              <!-- visual -->
+              <div class="visual">
 
-	  			<button class="header__visual-close" type="button">X</button>
-  	    </div>
-  	  </div>
-  	</header>
-  	<main class="container l-row">
-  	  <section>
-  	    <h2 class="a11y-hidden">7 digital detail</h2>
-  	    <p class="disc">7digital creates and implements white label music solutions that transform the digital listening experience, bringing brands, music and listeners together. From radio or on-demand streaming services to content curation and rights management, we handle it all.</p>
-  	    <a class="about" href="#">more about 7digital</a>
-  	    <figure>
-  	    	<img src="./images/computer.png" alt="">
-  	    </figure>
-  	  </section>
-  	</main>
+                <!-- visual__wrap -->
+                <div class="visual__txt-wrap l-row">
+                  <h1 class="visual__tit">
+                    Powering music
+                    <span class="visual__tit-disc">streaming <span>/</span> cruation <span>/</span> intelligence</span>
+                  </h1>
+                  <button class="video__btn" type="button">
+                      <span class="a11y-hidden">play</span>
+                  </button>
+                  <button class="visual-close" type="button" hidden>X</button>
+                </div><!-- // visual__wrap -->
+
+              </div><!-- // visual -->
+          </div>
+      </header>
+      <main class="container l-row">
+          <section>
+              <h2 class="a11y-hidden">7 digital detail</h2>
+              <p class="disc">7digital creates and implements white label music solutions that transform the digital listening experience, bringing brands, music and listeners together. From radio or on-demand streaming services to content curation and rights management, we handle it all.</p>
+              <a class="about" href="#">more about 7digital</a>
+              <figure>
+                  <img src="./images/computer.png" alt="">
+              </figure>
+          </section>
+      </main>
+    </div>
 </body>
 
 </html>

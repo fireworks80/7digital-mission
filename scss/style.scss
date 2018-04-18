@@ -30,9 +30,7 @@ $color-highlight: #22cfd1;
 
 *,
 *::before,
-*::after {
-	box-size: border-box;
-}
+*::after { box-size: border-box; }
 
 body,
 h1,
@@ -43,30 +41,22 @@ ul {
 	padding: 0;
 }
 
-ul {
-	list-style: none;
-}
+ul { list-style: none; }
 
-a {
-	text-decoration: none;
-}
+a { text-decoration: none; }
 
 body {
 	font-family: $font-family, $font-default;
 	line-height: 1.4;
 }
 
-iframe {
-	border: 0;
-}
+iframe { border: 0; }
 
 //===================================
 // helper
 //===================================
 .a11y-hidden {
 	position: absolute;
-	top: auto;
-	left: -9999em;
 	width: 1px;
 	height: 1px;
 	margin: -1px;
@@ -80,7 +70,6 @@ iframe {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 }
 
 //===================================
@@ -107,46 +96,10 @@ iframe {
 		top: 50px;
 		z-index: 10;
 		display: flex;
-		flex-grow: 0;
-		flex-shrink: 1;
+		flex: 0 1 auto;
 		justify-content: space-between;
 		align-items: center;
 		width: $width-min;
-	}
-
-	&__visual {
-		// @include debug;
-		justify-content: center;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		z-index: 10;
-		text-align: center;
-
-		&-close {
-
-		}
-	} // visual
-
-	&__tit {
-		align-self: center;
-		font-size: 120px;
-		color: #fff;
-		text-align: center;
-		letter-spacing: -4px;
-
-		&-disc {
-			display: block;
-			margin-bottom: 110px;
-			font-size: 38px;
-			letter-spacing: initial;
-
-			span {
-				color: $color-highlight;
-			}
-		}
 	}
 }
 
@@ -166,6 +119,8 @@ iframe {
 }
 
 .video {
+	display: flex;
+	justify-content: center;
 	position: relative;
 	width: 100%;
 	padding-top: 56.25%;
@@ -189,9 +144,53 @@ iframe {
 	}
 }
 
-.container {
-	text-align: center;
-}
+.visual {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-top: -56.25%;
+	width: $width-max;
+
+	&__txt-wrap {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__tit {
+		font-size: 120px;
+		color: #fff;
+		text-align: center;
+		// letter-spacing: -4px;
+
+		&-disc {
+			display: block;
+			margin-bottom: 110px;
+			font-size: 38px;
+			letter-spacing: initial;
+
+			span {
+				color: $color-highlight;
+			}
+		}
+	}
+
+	&-close {
+		position: absolute;
+		top: -30px;
+		right: 0;
+		padding: 0;
+		width: 30px;
+		height: 30px;
+		border: 0;
+		background-color: transparent;
+		font-size: 24px;
+		color: #fff;
+		cursor: pointer;
+	}
+} // visual
+
+.container { text-align: center; }
 
 .disc {
 	margin-top: 100px;
