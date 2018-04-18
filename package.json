@@ -5,6 +5,9 @@
   "repository": "https://github.com/fireworks80/7digital-mission.git",
   "author": "fireworks80 <fireworks80@naver.com>",
   "license": "MIT",
+  "scripts": {
+  	"start": "yarn run live-server"
+  },
   "devDependencies": {
     "live-server": "^1.2.0"
   }
