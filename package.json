@@ -1,0 +1,11 @@
+{
+  "name": "7digital-mission",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fireworks80/7digital-mission.git",
+  "author": "fireworks80 <fireworks80@naver.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
